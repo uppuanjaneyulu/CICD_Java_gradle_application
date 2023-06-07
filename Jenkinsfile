@@ -1,6 +1,6 @@
-pipeline {
+pipeline{
     agent any
-    statges{
+    stages{
         satge("sonar quality check") {
             steps{
                 script{
