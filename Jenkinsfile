@@ -5,8 +5,8 @@ pipeline{
             steps{
                 script{
                     withSonarQubeEnv(credentialsId: 'sonar-scaner') {
-                            sh 'chmod +x gradlew'
-                            sh './gradlew sonarqube'
+                            sh 'chmod +x app.py'
+                            sh './app.py sonarqube'
                     }
                 }
             }
